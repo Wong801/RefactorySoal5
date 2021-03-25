@@ -19,5 +19,5 @@ yarn build
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Note
-Edit button won't work (no one handle that)
+Edit button and search won't work (no one handle that)
 find todos by matching calendar's date with todo's data date
