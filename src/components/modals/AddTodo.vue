@@ -9,8 +9,8 @@
       <label for="createdAt" class="mt-4 text-2xl font-bold">Choose Date</label>
       <datepicker name="createdAt" v-model="createdAt" :lang="lang" type="datetime" :format="format" :placeholder="placeholder" class="mt-4 date"></datepicker>
       <div class="buttons">
-        <button @click="$emit('close-add-todo')"><h2>Cancel</h2></button>
-        <button type="submit">Create Task</button>
+        <button @click="$emit('close-add-todo')" class="close"><h2>Cancel</h2></button>
+        <button type="submit" class="submit ml-8">Create Task</button>
       </div>
     </form>
   </div>
@@ -77,4 +77,22 @@ label {
 .date {
   width: 20vw;
 }
+.buttons {
+  margin: 10rem auto;
+  width: 20vw;
+}
+.close {
+  border: 1px solid #0442D0;
+  background-color: #fff;
+  color: #0442D0;
+  width: 4rem;
+  border-radius: 10px;
+}
+.submit {
+  background-color: #0442D0;
+  color: #fff;
+  width: 4rem;
+  border-radius: 10px;
+}
+.submit
 </style>
